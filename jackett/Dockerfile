@@ -1,11 +1,11 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/amd64:6.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/amd64:7.2.0
 
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 ARG \
     BUILD_ARCH=amd64 \
-    JACKETT_RELEASE=v0.20.2171
+    JACKETT_RELEASE=v0.22.538
 
 ENV XDG_DATA_HOME="/share/jackett" \
     XDG_CONFIG_HOME="/config"
